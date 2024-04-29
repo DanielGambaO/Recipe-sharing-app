@@ -5,11 +5,14 @@ const authController = require('../controllers/authController');
 
 
 // register
-router.post('/register', authController.register);
+router.post('/signup', authController.signup);
 
 
 // login 
 router.post('/login', authController.login);
+
+// logout
+router.get('/logout', authController.logout);
 
 
 
